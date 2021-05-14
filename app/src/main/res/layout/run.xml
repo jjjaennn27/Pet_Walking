@@ -51,7 +51,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/txtmsg" />
 
     <TextView
         android:id="@+id/textView2"
@@ -86,7 +86,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtmsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="110dp"
@@ -110,8 +110,8 @@
         android:background="#00000000"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/txtmsg"
+        app:layout_constraintStart_toStartOf="@+id/txtmsg"
         app:srcCompat="@drawable/paw_register" />
 
     <Spinner
@@ -119,7 +119,7 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/txtmsg"
         app:layout_constraintTop_toTopOf="@+id/textView"
         app:layout_constraintVertical_bias="0.0"
         android:spinnerMode="dialog"/>
@@ -129,7 +129,7 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/txtmsg"
         app:layout_constraintTop_toTopOf="@+id/textView2"
         android:spinnerMode="dropdown"/>
 
@@ -142,7 +142,7 @@
         android:gravity="start|top"
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/txtmsg"
         app:layout_constraintTop_toTopOf="@+id/textView3" />
 
 

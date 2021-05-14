@@ -9,10 +9,12 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
-import android.widget.Toast;
+import android.widget.TextView;
+
 
 public class Register_Run extends AppCompatActivity implements View.OnClickListener {
     EditText edittext1;
+    TextView txtmsg;
     Spinner spinner1, spinner2;
     ImageButton btn_finish;
 
@@ -25,6 +27,8 @@ public class Register_Run extends AppCompatActivity implements View.OnClickListe
         btn_finish.setOnClickListener(this);
         spinner1 = findViewById(R.id.spinner1);
         spinner2 = findViewById(R.id.spinner2);
+        edittext1 = findViewById(R.id.edittext1);
+        txtmsg = findViewById(R.id.txtmsg);
 
         // 이름 스피너
         ArrayAdapter name = ArrayAdapter.createFromResource(this, R.array.name, android.R.layout.simple_spinner_dropdown_item);
@@ -51,11 +55,10 @@ public class Register_Run extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onNothingSelected(AdapterView<?> parent) { }
         });
-
     }
 
     @Override
     public void onClick(View v) {
-        Toast.makeText(Register_Run.this,"산책 정보가 저장되었습니다.",Toast.LENGTH_SHORT).show();
+        txtmsg.setText("오늘의 산책정보 등록 완료!");
     }
 }
