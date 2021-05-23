@@ -16,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 
 public class Register_Run extends AppCompatActivity implements View.OnClickListener {
-    EditText txtplace;
+    EditText place;
     TextView txtmsg;
     Spinner spinner1, spinner2;
     ImageButton btn_finish;
@@ -30,7 +30,7 @@ public class Register_Run extends AppCompatActivity implements View.OnClickListe
         btn_finish.setOnClickListener(this);
         spinner1 = findViewById(R.id.spinner1);
         spinner2 = findViewById(R.id.spinner2);
-        txtplace = findViewById(R.id.txtplace);
+        place = findViewById(R.id.txtplace);
         txtmsg = findViewById(R.id.txtmsg);
 
         // 이름 스피너
@@ -67,13 +67,14 @@ public class Register_Run extends AppCompatActivity implements View.OnClickListe
         //산책 정보 저장
         FirebaseDatabase firebaseDatabase= FirebaseDatabase.getInstance();
         DatabaseReference rootRef= firebaseDatabase.getReference();
-        String time = spinner2.getSelectedItem().toString(); //시간
-        String Txtplace = txtplace.getText().toString(); //장소
+        String Time = spinner2.getSelectedItem().toString(); //시간
+        String Place = place.getText().toString(); //장소
 
-        Walk walk = new Walk(time, Txtplace);
+        Walk walk = new Walk(Time, Place);
 
         DatabaseReference personRef = rootRef.child("walk");
         personRef.push().setValue(walk);
+
 
 
 

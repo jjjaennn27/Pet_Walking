@@ -2,27 +2,27 @@ package com.example.pet_walking;
 
 public class Walk {
 
-    String time;
-    String txtplace;
+    String Time;
+    String Place;
 
-    public Walk(String time, String Txtplace) {
-        this.time = time;
-        this.txtplace = Txtplace;
+    public Walk(String Time, String Place) {
+        this.Time = Time;
+        this.Place = Place;
     }
 
 
     public String getTime() {
-        return time;
+        return Time;
     }
-    public void setTime(String time) {
-        this.time = time;
+    public void setTime(String Time) {
+        this.Time = Time;
     }
 
-    public String getTxtplace() {
-        return txtplace;
+    public String getPlace() {
+        return Place;
     }
-    public void setTxtplace(String txtplace) {
-        this.txtplace = txtplace;
+    public void setPlace(String Place) {
+        this.Place = Place;
     }
 
 }
