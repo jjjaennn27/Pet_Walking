@@ -2,20 +2,20 @@ package com.example.pet_walking;
 
 public class Walk {
 
-    String timespinner;
+    String time;
     String txtplace;
 
-    public Walk(String timespinner, String Txtplace) {
-        this.timespinner = timespinner;
+    public Walk(String time, String Txtplace) {
+        this.time = time;
         this.txtplace = Txtplace;
     }
 
 
-    public String getTimespinner() {
-        return timespinner;
+    public String getTime() {
+        return time;
     }
-    public void setTimespinner(String timespinner) {
-        this.timespinner = timespinner;
+    public void setTime(String time) {
+        this.time = time;
     }
 
     public String getTxtplace() {
