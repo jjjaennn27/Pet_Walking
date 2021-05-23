@@ -62,7 +62,7 @@ public class Register_Run extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        txtmsg.setText("오늘의 산책정보 등록 완료!");
+        txtmsg.setText(" 오늘의 산책정보 등록 완료! ");
 
         //산책 정보 저장
         FirebaseDatabase firebaseDatabase= FirebaseDatabase.getInstance();
