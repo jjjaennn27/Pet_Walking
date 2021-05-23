@@ -11,6 +11,9 @@ import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 public class Register_Run extends AppCompatActivity implements View.OnClickListener {
     EditText edittext1;
@@ -60,5 +63,19 @@ public class Register_Run extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         txtmsg.setText("오늘의 산책정보 등록 완료!");
+
+
+        FirebaseDatabase firebaseDatabase= FirebaseDatabase.getInstance();
+        DatabaseReference rootRef= firebaseDatabase.getReference();
+        String timespinner = spinner2.getSelectedItem().toString();
+
+
+        Walk walk = new Walk(timespinner);
+
+        DatabaseReference personRef = rootRef.child("walk");
+        personRef.push().setValue(walk);
+
+
+
     }
 }

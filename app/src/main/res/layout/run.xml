@@ -8,36 +8,6 @@
     android:backgroundTint="#FFFFFC"
     tools:context=".Main">
 
-    <!--    <EditText-->
-    <!--        android:id="@+id/editTextTextMultiLine"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginEnd="2dp"-->
-    <!--        android:layout_marginBottom="353dp"-->
-    <!--        android:ems="10"-->
-    <!--        android:gravity="start|top"-->
-    <!--        android:hint="ex) 1시간 30분"-->
-    <!--        android:inputType="textMultiLine"-->
-    <!--        android:textColor="#E19861"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toEndOf="@+id/textView2"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/spinner1" />-->
-
-    <!--    <EditText-->
-    <!--        android:id="@+id/editTextTextMultiLine2"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginEnd="27dp"-->
-    <!--        android:ems="10"-->
-    <!--        android:gravity="start|top"-->
-    <!--        android:hint="이름을 입력하세요!"-->
-    <!--        android:inputType="textMultiLine"-->
-    <!--        android:textColor="#E19861"-->
-    <!--        app:layout_constraintBaseline_toBaselineOf="@+id/textView"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toEndOf="@+id/textView" />-->
-
 
     <TextView
         android:id="@+id/textView"
