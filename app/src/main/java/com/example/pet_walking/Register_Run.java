@@ -67,18 +67,14 @@ public class Register_Run extends AppCompatActivity implements View.OnClickListe
         //산책 정보 저장
         FirebaseDatabase firebaseDatabase= FirebaseDatabase.getInstance();
         DatabaseReference rootRef= firebaseDatabase.getReference();
+        String Person = spinner1.getSelectedItem().toString(); //사람
         String Time = spinner2.getSelectedItem().toString(); //시간
         String Place = place.getText().toString(); //장소
 
-        Walk walk = new Walk(Time, Place);
+        Walk walk = new Walk(Person, Time, Place);
 
         DatabaseReference personRef = rootRef.child("walk");
         personRef.push().setValue(walk);
-
-
-
-
-
 
 
     }

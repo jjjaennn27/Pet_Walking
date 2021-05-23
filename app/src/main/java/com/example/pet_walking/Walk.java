@@ -2,14 +2,20 @@ package com.example.pet_walking;
 
 public class Walk {
 
-    String Time;
-    String Place;
+    String Person, Time, Place;
 
-    public Walk(String Time, String Place) {
+    public Walk(String Person, String Time, String Place) {
+        this.Person = Person;
         this.Time = Time;
         this.Place = Place;
     }
 
+    public String getPerson() {
+        return Person;
+    }
+    public void setPerson(String Person) {
+        this.Person = Person;
+    }
 
     public String getTime() {
         return Time;
