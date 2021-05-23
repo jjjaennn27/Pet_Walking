@@ -28,10 +28,10 @@ public class Main extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.imgBtn1:
-                Intent intent1 = new Intent(Main.this, Register_Food.class);
-                startActivity(intent1);
-                break;
+//            case R.id.imgBtn1:
+//                Intent intent1 = new Intent(Main.this, Register_Food.class);
+//                startActivity(intent1);
+//                break;
 //            case R.id.imgBtn2:
 //                Intent intent2 = new Intent(Main.this, Register_Snack.class);
 //                startActivity(intent2);
