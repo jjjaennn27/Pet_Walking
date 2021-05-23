@@ -59,7 +59,7 @@
         android:id="@+id/txtmsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="90dp"
         android:layout_marginBottom="71dp"
         android:drawableTint="#E1D887"
         android:text="산책정보를 등록해주세요!"
@@ -82,38 +82,52 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/txtmsg"
         app:layout_constraintStart_toStartOf="@+id/txtmsg"
+        app:layout_constraintTop_toBottomOf="@+id/info"
         app:srcCompat="@drawable/paw_register" />
 
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="200dp"
         android:layout_height="40dp"
+        android:spinnerMode="dialog"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="@+id/txtmsg"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0"
-        android:spinnerMode="dialog"/>
+        app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="200dp"
         android:layout_height="40dp"
+        android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="@+id/txtmsg"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
-        android:spinnerMode="dropdown"/>
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/txtplace"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:hint="ex) 단대 호수"
         android:ems="10"
         android:gravity="start|top"
+        android:hint="ex) 단대 호수"
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="@+id/txtmsg"
         app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="529dp"
+        android:layout_marginBottom="54dp"
+        android:text="산책 정보"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_finish"
+        app:layout_constraintEnd_toEndOf="@+id/btn_finish"
+        app:layout_constraintStart_toStartOf="@+id/btn_finish"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

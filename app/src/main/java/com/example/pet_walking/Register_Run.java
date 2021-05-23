@@ -73,8 +73,8 @@ public class Register_Run extends AppCompatActivity implements View.OnClickListe
 
         Walk walk = new Walk(Person, Time, Place);
 
-        DatabaseReference personRef = rootRef.child("walk");
-        personRef.push().setValue(walk);
+        DatabaseReference walkRef = rootRef.child("walk");
+        walkRef.push().setValue(walk);
 
 
     }
