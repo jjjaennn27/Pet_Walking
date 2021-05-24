@@ -116,18 +116,6 @@
         app:layout_constraintEnd_toEndOf="@+id/txtmsg"
         app:layout_constraintTop_toTopOf="@+id/textView3" />
 
-    <TextView
-        android:id="@+id/info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="529dp"
-        android:layout_marginBottom="54dp"
-        android:text="산책 정보"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_finish"
-        app:layout_constraintEnd_toEndOf="@+id/btn_finish"
-        app:layout_constraintStart_toStartOf="@+id/btn_finish"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
